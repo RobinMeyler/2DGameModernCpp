@@ -1,5 +1,6 @@
 #pragma once
 
+// Singleton Class for Screen Manager
 class ScreenManager
 {
 public:

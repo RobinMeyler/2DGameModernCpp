@@ -2,6 +2,8 @@
 
 
 #include <SFML/Graphics.hpp>
+#include "Player.h"
+
 
 class GameplayScreen
 {
@@ -13,7 +15,7 @@ public:
 
 private:
 	sf::RectangleShape Ground;
-	sf::RectangleShape Player;
+	Player m_Player;
 	float m_movementSpeed;
 };
 

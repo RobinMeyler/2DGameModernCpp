@@ -5,7 +5,8 @@
 // Initalizer List is/Is not in order - Look up this fact again
 Game::Game()
 	: m_currentGameMode(GameMode::Gameplay),
-	  m_renderWindow{ sf::VideoMode({ ScreenManager::getInstance().getWidth<unsigned int>(), ScreenManager::getInstance().getHeight<unsigned int>()}), "August", sf::Style::Titlebar | sf::Style::Resize | sf::Style::Close, sf::State::Windowed }
+	  m_renderWindow{ sf::VideoMode({ ScreenManager::getInstance().getWidth<unsigned int>(), ScreenManager::getInstance().getHeight<unsigned int>()}), 
+	"August", sf::Style::Titlebar | sf::Style::Resize | sf::Style::Close, sf::State::Windowed }
 {
 }
 
@@ -114,7 +115,7 @@ void Game::update(sf::Time t_deltaTime)
 void Game::render()
 {
 	// clear the window with black color
-	m_renderWindow.clear(sf::Color::Black);
+	m_renderWindow.clear(sf::Color::Blue);
 
 	switch (m_currentGameMode)					
 	{
